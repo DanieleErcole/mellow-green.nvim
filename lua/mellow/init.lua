@@ -49,7 +49,7 @@ local set_groups = function()
     ["Label"] = { fg = c.blue }, -- case, default, etc.
     ["Operator"] = { fg = c.yellow }, -- sizeof", "+", "*", etc.
     ["Keyword"] = { fg = c.blue, style = cfg.keyword_style }, -- any other keyword
-    ["Exception"] = { fg = c.purple }, -- try, catch, throw
+    ["Exception"] = { fg = c.blue }, -- try, catch, throw
     ["PreProc"] = { fg = c.cyan }, -- generic Preprocessor
     ["Include"] = { fg = c.blue }, -- preprocessor #include
     ["Define"] = { fg = c.cyan }, -- preprocessor #define
@@ -106,7 +106,7 @@ local set_groups = function()
     ["Question"] = { fg = c.blue }, -- hit-enter prompt and yes/no questions
     ["QuickFixLine"] = { fg = c.cyan, bg = c.gray02 }, -- Current quickfix item in the quickfix window.
     ["Search"] = { fg = c.bright_yellow, bg = c.black }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
-    ["SpecialKey"] = { fg = c.special_grey }, -- Meta and special keys listed with " =map", also for text used to show unprintable characters in the text, 'listchars'. Generally: text that is displayed differently from what it really is.
+    ["SpecialKey"] = { fg = c.gray06 }, -- Meta and special keys listed with " =map", also for text used to show unprintable characters in the text, 'listchars'. Generally: text that is displayed differently from what it really is.
     ["SpellBad"] = { fg = c.red, underline = true }, -- Word that is not recognized by the spellchecker. This will be combined with the highlighting used otherwise.
     ["SpellCap"] = { fg = c.yellow }, -- Word that should start with a capital. This will be combined with the highlighting used otherwise.
     ["SpellLocal"] = { fg = c.yellow }, -- Word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.
@@ -212,7 +212,7 @@ local set_groups = function()
     ["@lsp.type.string.rust"] = { link = "@string" },
     ["@lsp.type.typeAlias"] = { link = "@type.definition" },
     ["@lsp.type.variable"] = {}, -- disable semantic token and use treesitter instead
-    ["@lsp.type.unresolvedReference"] = { undercurl = true, sp = c.error },
+    ["@lsp.type.unresolvedReference"] = { undercurl = true, sp = c.red },
     ["@lsp.typemod.class.defaultLibrary"] = { link = "@type.builtin" },
     ["@lsp.typemod.enum.defaultLibrary"] = { link = "@type.builtin" },
     ["@lsp.typemod.enumMember.defaultLibrary"] = { link = "@constant.builtin" },
